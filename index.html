@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Quiz</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><span id="view-hs">High Scores</span></li>
+                    <li>Time: <span id="timer"></span></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="main-screen">
+            <div>
+                <h1 class="title">Code Quiz</h1>
+                <p>Answer the following code questions in the time limit. Incorrect answers
+                    will deduct your score (or time) by 10 seconds.
+                </p>
+                <div class="quiz-start">
+                    <button class="start-btn" type="button">Quiz Start</button>"
+                </div>
+            </div>
+        </section>
+        <section id="question-screen">
+            <div id="quest-title" class="quest-ask"></div>
+
+            <div class="select-list">
+                <div id="sel1" class="select"></div>
+                <div id="sel2" class="select"></div>
+                <div id="sel3" class="select"></div>
+                <div id="sel4" class="select"></div>
+            </div>
+
+            <div id="worc" class="wrong-correct"></div>
+        </section>
+        <section>
+            <div class="finish">
+                <span>Done!</span>
+                <div class="final-result">
+                    <p>Final Score: <span id="finalsc"></span></p>
+                </div>
+                <div class="signingbox">
+                    <form>
+                        <label for="initials" class="initial-txt">Enter Initials:</label>
+                        <input type="text" id="initials" name="initials"></label>
+                        <button type="submit" value="Submit" id="submit">Finished</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
