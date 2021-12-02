@@ -72,14 +72,14 @@ timerL.textContent = 0;
 var remainingTime = 99;
 
 function startG() {
-    var timerInt = Intset(function() {
+    var timerInt = setInterval(function() {
         if (remainingTime > 0) {
             timerL.textContent = remainingTime;
             remainingTime--;
         }
         else {
             timerL.textContent = 0;
-            Intset(timerInt);
+            clearInterval(timerInt);
             endG();
         }
     }, 1000);

@@ -1,3 +1,180 @@
 * {
     box-sizing: border-box;
 }
+
+:root {
+    --primary-color: blue;
+    --secondary-color: purple;
+    --tertiary-color: grey;
+    --quaternary-color: white;
+}
+
+body {
+    background-color: var(--quaternary-color);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+header nav {
+    padding: 10px 30px 0 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header nav ul li {
+    color: black;
+    font-size: 1.5vw;
+}
+
+#view-hs {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#view-hs:hover {
+    color: var(--tertiary-color);
+}
+
+#main-screen {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--quaternary-color);
+    height: 100vh;
+    width: 100vw;
+}
+
+#main-screen h1 {
+    text-align: center;
+    font-size: 4.2vw;
+    color: black;
+    margin: 100px 0 10px 0;
+    text-shadow: 1px 1px 2px var(--tertiary-color);
+}
+
+#main-screen p {
+    text-align: center;
+    font-size: 2vw;
+    color: black;
+    padding: 0 175px;
+    margin: 0 0 20px 0;
+}
+
+.quiz-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.start-btn {
+    position: absolute;
+    font-size: 2.5vw;
+    padding: 1vw 2.5vw;
+    border-radius: 8px;
+    color: var(--quaternary-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    cursor: pointer;
+}
+
+#question-screen,
+#finish-screen,
+#high-screen {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--quaternary-color);
+    padding: 5vh 15vw 0 15vw;
+}
+
+.quest-ask,
+.finish,
+.hsstatement {
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.select {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+    border-radius: 8px;
+    color: var(--quaternary-color);
+    font-size: 2vw;
+    margin: 1vw 0;
+    padding: 1vw 0 1vw 2vw;
+    width: fit-content;
+    min-width: 30%;
+    max-width: 65%;
+    cursor: pointer;
+}
+
+.select-list {
+    padding: 0 0 0 0.5vw;
+}
+
+.wrong-correct {
+    border-top: 3px solid var(--tertiary-color); 
+    margin: 2vw 0 10vw 0;
+    padding: 1vw 0 1vw 2vw;
+    font-size: 2vw;
+    font-style: italic;
+    color: var(--tertiary-color);
+}
+
+.final-result,
+.signingbox,
+#hsstatement {
+    font-size: 2.5vw;
+    font-weight: normal;
+}
+
+.signingbox form {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.signingbox form input {
+    height: 3vw;
+    width: 300px;
+    border: 1px solid black;
+    font-size: 2vw;
+    margin: 0 0 0 15px;
+}
+
+.hsstatement {
+    margin: 0 0 1.5vw 0;
+}
+
+#hslist {
+    background-color: rgba(76, 78, 175, 0.3);
+    margin: 0 30vw 1.5vw 0;
+    padding: 0 0 0 1vw;
+}
+
+#clears, #go-back {
+    color: var(--quaternary-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 2.5vw;
+    padding: 0.5vw 2vw;
+    cursor: pointer;
+}
+
+.start-btn:hover,
+.select:hover,
+.signingbox form button:hover,
+#clears:hover,
+#go-back:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
